@@ -11,7 +11,7 @@ RUN \
 	apt-get clean && rm -rf /var/lib/apt/lists/* && \
 	useradd -ms /bin/bash freegeoip
 
-USER freegeoip
+# USER freegeoip
 ENTRYPOINT ["/go/bin/freegeoip"]
 
 EXPOSE 8080
